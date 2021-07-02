@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(arr){/* 함수의 매개변수를 입력 */
+                let answer = arr;
+                let sum = arr.reduce((a,b)=>a+b, 0); // reduce는 누적 함수 
+                /* a에 b를 누적하는 것. 뒤에 0은 a값을 초기화 0인 상태에서 시작
+                ex) a=20 b=7 => 20+7
+                    a=20 b=23 => 20+23
+                    a=20 b=19 => 20+19
+                */
+               for(let i=0; i<8; i++){
+                   for(let j=i+1; j<9; j++){
+                       if((sum-(arr[i]+arr[j]===100))){
+                           arr.splice(j, 1); //splice는 제거하라는 함수, i번째 값에서 하나 제거
+                           arr.splice(i, 1); // j번째 값에서 하나 제거
+                       }
+                   }
+               }
+                return answer;/* 답을 re
+                turn */
+            }
+            let arr =[20, 7, 23, 19, 10, 15, 25, 8, 13];
+            console.log(solution(arr));/*return받은 값을 출력*/
+        </script>
+    </body>
+</html>

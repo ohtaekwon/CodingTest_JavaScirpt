@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>           
+            function solution(s, t){/* s는 문자열 t는 문자 */
+                let answer=s.split(t).length; // counting 하기 위해서 0으로 초기화       
+                return answer-1;/* 답을 return */
+                }
+
+            let str = "COMPUTERPROGRAMMING"
+            console.log(solution(str, 'R'));/*return받은 값을 출력*/
+        </script>
+    </body>
+</html>
