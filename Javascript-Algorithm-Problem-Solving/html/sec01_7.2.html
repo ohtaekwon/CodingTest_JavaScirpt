@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(day, arr){/* 함수의 매개변수를 입력 */
+                let answer=0;
+                for(let x of arr){
+                    if(x%10==day) answer++;
+                }
+                return answer;/* 답을 return */
+            }
+            arr=[25, 23, 11, 47, 53, 17, 33];
+            console.log(solution(3, arr));/*return받은 값을 출력*/
+        </script>
+        <script>
+           function solution(day, arr){/* 함수의 매개변수를 입력 */
+                let answer=0;
+                for(let x of arr){
+                    if(x%10==day) answer++;
+                }
+                return answer;/* 답을 return */
+            }
+            arr=[12, 20, 54, 30, 87, 91, 30];
+            console.log(solution(0, arr));
+        </script>
+        <script>
+        function solution(participant, completion) {
+            var answer = '';
+            var arr = [];
+            participant.sort()
+            completion.sort()
+
+            answer = participant.find((e, i) => {
+            if(e !== completion[i]){
+                return e
+            }
+            })
+            // console.log("arr:: ", arr)
+            console.log("answer:: ", answer)
+            return answer;
+        }            
+        </script>
+    </body>
+</html>
+
+

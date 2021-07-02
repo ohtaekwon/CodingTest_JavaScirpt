@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(s){/* 함수의 매개변수를 입력 */
+                let answer=s; //answer을 s로 받음으로써 '얕은 복사'가 되었다.
+                s=answer.replace(/A/g, '#')
+                console.log(s); //B#N#N#
+
+                return answer;/* BANANA */
+            }
+
+            let str = "BANANA";
+            console.log(solution(str));/*return받은 값을 출력*/
+        </script>
+    </body>
+</html>

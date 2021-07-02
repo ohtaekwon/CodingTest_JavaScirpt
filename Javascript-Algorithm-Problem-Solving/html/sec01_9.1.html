@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(s){
+                let answer="";
+                for(let x of s){
+                    console.log(x);
+                }
+                return answer; /*   B
+                                    A
+                                    N
+                                    A
+                                    N
+                                    A
+                               */
+            }
+            let str = "BANANA";
+            console.log(solution(str));
+        </script>
+
+        <script>
+            function solution(s){/* 함수의 매개변수를 입력 */
+                let answer="";
+                for(let x of s){// 문자를 한개씩 받는다.
+                    if(x==='A') answer+='#'; //if가 참이면 answer에 추가
+                    else answer+=x;
+                }
+                return answer;/* 답을 return */
+            }
+            let str = "BANANA";
+            console.log(solution(str));/*return받은 값을 출력*/
+        </script>
+    </body>
+</html>
